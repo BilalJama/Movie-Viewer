@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Movie Viewer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+
+  <div id="Overview" class="tabcontent">
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn" style="float: right; background:none; border:none;">
+        <div id="myDropdown" class="dropdown-content">
+      <a href="#home">Report</a>
+      <a href="#about">Share</a>
+  </div>
+    <div class="test"></div>
+  </button></div>
+    <h1>Blade Runner 2049     </h1>
+  
+  
+  
+    <p>Genre: Sci-Fi|Runtime 200min</p>
+  
+  </div>
+  
+  <div id="Cast" class="tabcontent">
+     <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn" style="float: right; background:none; border:none;">
+        <div id="myDropdown" class="dropdown-content">
+      <a href="#home">Report</a>
+      <a href="#about">Share</a>
+  </div>
+    <div class="test"></div>
+  </button></div>
+    <h1>Cast</h1>
+    <p>Meet the characters</p> 
+  </div>
+  
+
+
+
+
+
+
+<div class="sticky">
+<button class="tablink" onclick="openTab('Overview', this, '#003366'); openBody('Home', this, 'red')" id="defaultOpen">Overview</button>
+<button class="tablink " onclick="openTab('Cast', this, '#003366'); openBody('News', this, 'red');">Cast</button>
+</div>
+<div id="Home" class="bodycontent">
+<p>
+
+   <!-- Images used to open the lightbox -->
+<div class="row">
+  <div class="column" >
+    
+    <img src="poster.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" >
+ 
+  </div>
+  <div class="column">
+    <img src="poster2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow"  >
+   
+  </div>
+  <div class="column">
+    <img src="poster3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" >
+
+  </div>
+  <div class="column">
+    <img src="poster4.jpeg" onclick="openModal();currentSlide(4)" class="hover-shadow" >
+
+
+  </div>
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="poster.jpg" style="width:50%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="poster2.jpg" style="width:50%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="poster3.jpg" style="width:50%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="poster4.jpeg" style="width:50%">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+</div>
+
+
+<p style ="text-align: center;"><b>8.9/10</b> on <a href="" style="text-decoration: none;">IMDB</a> <img src="imdb.png" style="height: 20px; width:20px;"><br> <b>99%</b> on <a href="" style="text-decoration: none">Rotten Tomatoes</a> <img src="tomatoes.png" id="icon" style="height:20px; width:20px;"> </p>
+
+<hr>
+<p style="text-align: center;"><b>92%</b> of users rated this movie <b style="color: green;">Good</b> </p> 
+<hr>
+<p>Officer K (Ryan Gosling), a new blade runner for the Los Angeles Police Department, unearths a long-buried secret that has the potential to plunge what's left of society into chaos. His discovery leads him on a quest to find Rick Deckard (Harrison Ford), a former blade runner who's been missing for 30 years.</p>
+<p> Directed by: <br><a href ="" style="text-decoration: none"> Denis Villeneuve</a> </p>
+<hr>
+<p style="font-weight: 500">Cast</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>
+
+  <!-- Images used to open the lightbox -->
+<div class="row">
+  <div class="column" >
+    <img src="cast1.png" onclick="openModal3();currentSlide3(1)" class="hover-shadow">
+  
+  <p>Ryan Gosling</p>
+  </div>
+  <div class="column">
+    <img src="cast2.png" onclick="openModal3();currentSlide3(2)" class="hover-shadow" >
+    
+  <p>Harrison Ford</p>
+  </div>
+  <div class="column">
+    <img src="cast3.png" onclick="openModal3();currentSlide3(3)" class="hover-shadow" >
+ <p> Ana De Armas</p>
+  </div>
+  <div class="column">
+    <img src="cast4.png" onclick="openModal3();currentSlide3(4)" class="hover-shadow" >
+<p>Sylvia Hoeks</p>
+  </div>
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal3" class="modal">
+  <span class="close cursor" onclick="closeModal3()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides3">
+      <div class="numbertext">1 / 4</div>
+      <img src="cast111.jpg" style="width:50%">
+    </div>
+
+    <div class="mySlides3">
+      <div class="numbertext">2 / 4</div>
+      <img src="cast222.jpg" style="width:50%">
+    </div>
+
+    <div class="mySlides3">
+      <div class="numbertext">3 / 4</div>
+      <img src="cast333.jpg" style="width:50%">
+    </div>
+
+    <div class="mySlides3">
+      <div class="numbertext">4 / 4</div>
+      <img src="cast444.jpg" style="width:50%">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides3(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides3(1)">&#10095;</a>
+
+</div> 
+</div>
+
+</div>
+
+
+
+
+<div id="Cast1" class="bodycontent">
+    <div id="loader"></div> 
+    
+<div style="display:none;" id="myDiv" class="animate-bottom">
+  <p><img src="cast11.png" ></p>
+  <table style="width:100%">
+      
+      <tr>
+        <td><b>Name</b></td>
+        <td>Ryan Gosling</td>
+        
+        
+      </tr>
+      <tr>
+        <td><b>Age</b></td>
+        <td>25</td>
+      </tr>
+      <tr>
+          <td><b>Eye Color</b></td>
+          <td>Blue</td>
+        </tr>
+        <tr>
+            <td><b>Height</b></td>
+            <td>6"1</td>
+          </tr>
+          <tr>
+              <td><b>Years Active</b></td>
+              <td>1993-Present</td>
+            </tr>
+    </table>
+    <hr>
+    <p>Canadian actor Ryan Gosling first found success by joining the cast of The Mickey Mouse Club in 1993. As an adult, he starred in the romantic hit The Notebook (2004) and garnered award nominations for Half Nelson (2006) and Lars and the Real Girl (2007). Gosling has also appeared in Blue Valentine (2010), Crazy, Stupid, Love (2011), The Ides of March (2011) and The Big Short (2015), among other projects. He received Golden Globe and Oscar nominations for his portrayal of a jazz pianist in the 2016 hit movie musical La La Land, and the following year he starred in the popular sci-fi flick Blade Runner 2049.</p>
+</div>
+</div>
+
+
+
+
+
+
+
+
+<div id="Cast2" class="bodycontent">
+  
+<div style="display:none;" id="myDiv2" class="animate-bottom">
+<p><img src="cast22.jpg" ></p>
+<table style="width:100%">
+    
+    <tr>
+      <td><b>Name</b></td>
+      <td>Harrison Ford</td>
+      
+      
+    </tr>
+    <tr>
+      <td><b>Age</b></td>
+      <td>77</td>
+    </tr>
+    <tr>
+        <td><b>Eye Color</b></td>
+        <td>Grey</td>
+      </tr>
+      <tr>
+          <td><b>Height</b></td>
+          <td>5"9</td>
+        </tr>
+        <tr>
+            <td><b>Years Active</b></td>
+            <td>1966-Present</td>
+          </tr>
+  </table>
+  <hr>
+<p>Harrison Ford is an American actor, aviator and environmental activist. He initially gained worldwide fame for his starring role as Han Solo in the original trilogy of the Star Wars film franchise and would eventually reprise the role for the first film of the sequel trilogy. </p>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="Cast3" class="bodycontent">
+  
+<div style="display:none;" id="myDiv3" class="animate-bottom">
+<p><img src="cast33.jpg" ></p>
+<table style="width:100%">
+    
+    <tr>
+      <td><b>Name</b></td>
+      <td>Ana De Armas</td>
+      
+      
+    </tr>
+    <tr>
+      <td><b>Age</b></td>
+      <td>31</td>
+    </tr>
+    <tr>
+        <td><b>Eye Color</b></td>
+        <td>Black</td>
+      </tr>
+      <tr>
+          <td><b>Height</b></td>
+          <td>5"6</td>
+        </tr>
+        <tr>
+            <td><b>Years Active</b></td>
+            <td>2006-Present</td>
+          </tr>
+  </table>
+  <hr>
+<p>Ana Celia de Armas Caso is a Cuban actress. She made her acting debut in 2006 in the Spanish film Una rosa de Francia, and also starred in the Spanish television show El Internado. In 2015, she starred in her first American film, Knock Knock, followed by Exposed, Hands of Stone, and War Dogs</p></div>
+</div>
+
+
+
+
+
+
+
+
+
+<div id="Cast4" class="bodycontent">
+  
+<div style="display:none;" id="myDiv4" class="animate-bottom">
+<p><img src="cast44.jpg" ></p>
+<table style="width:100%">
+    
+    <tr>
+      <td><b>Name</b></td>
+      <td>Sylvia Hoeks</td>
+      
+      
+    </tr>
+    <tr>
+      <td><b>Age</b></td>
+      <td>36</td>
+    </tr>
+    <tr>
+        <td><b>Eye Color</b></td>
+        <td>Green</td>
+      </tr>
+      <tr>
+          <td><b>Height</b></td>
+          <td>5"3</td>
+        </tr>
+        <tr>
+            <td><b>Years Active</b></td>
+            <td>1997-Present</td>
+          </tr>
+  </table>
+  <hr>
+  <p>Sylvia Hoeks is a Dutch actress and former model best known internationally for her roles in Blade Runner 2049 and The Girl in the Spider's Web.</p>
+</div>
+</div>
+
+
+
+
+
+
+<div id="Cast5" class="bodycontent">  
+<div style="display:none;" id="myDiv5" class="animate-bottom">
+<p><img src="cast55.jpg" ></p>
+<table style="width:100%">
+    
+    <tr>
+      <td><b>Name</b></td>
+      <td>David Bautista</td>
+      
+      
+    </tr>
+    <tr>
+      <td><b>Age</b></td>
+      <td>50</td>
+    </tr>
+    <tr>
+        <td><b>Eye Color</b></td>
+        <td>Black</td>
+      </tr>
+      <tr>
+          <td><b>Height</b></td>
+          <td>6 ft</td>
+        </tr>
+        <tr>
+            <td><b>Years Active</b></td>
+            <td>1999-Present</td>
+          </tr>
+  </table>
+  <hr>
+  <p>David Michael Bautista Jr. is an American actor, retired professional wrestler, former mixed martial artist and bodybuilder. Bautista began his wrestling career in 1999, and signed with the World Wrestling Federation in 2000.</p>
+</div>
+</div>
+
+
+
+
+
+
+
+<div id="Cast6" class="bodycontent">
+  
+<div style="display:none;" id="myDiv6" class="animate-bottom">
+<p><img src="cast66.jpg" ></p>
+<table style="width:100%">
+    
+    <tr>
+      <td><b>Name</b></td>
+      <td>Mackenzie Davis</td>
+      
+      
+    </tr>
+    <tr>
+      <td><b>Age</b></td>
+      <td>32</td>
+    </tr>
+    <tr>
+        <td><b>Eye Color</b></td>
+        <td>Blue</td>
+      </tr>
+      <tr>
+          <td><b>Height</b></td>
+          <td>5"8 </td>
+        </tr>
+        <tr>
+            <td><b>Years Active</b></td>
+            <td>2011-Present</td>
+          </tr>
+  </table>
+  <hr>
+  <p>Mackenzie Davis is a Canadian actress. She made her feature film debut in Smashed, and later appeared in Breathe In, That Awkward Moment, The Martian, Blade Runner 2049, and The F Word, the last for which she received a Canadian Screen Award nomination.</p>
+</div>
+</div>
+
+
+
+
+<div id="Cast7" class="bodycontent">
+  
+  <div style="display:none;" id="myDiv7" class="animate-bottom">
+  <p><img src="cast8.jpg" ></p>
+  <table style="width:100%">
+      
+      <tr>
+        <td><b>Name</b></td>
+        <td>Edward James Olmos</td>
+        
+        
+      </tr>
+      <tr>
+        <td><b>Age</b></td>
+        <td>72</td>
+      </tr>
+      <tr>
+          <td><b>Eye Color</b></td>
+          <td>Grey</td>
+        </tr>
+        <tr>
+            <td><b>Height</b></td>
+            <td>5"8 </td>
+          </tr>
+          <tr>
+              <td><b>Years Active</b></td>
+              <td>1974-Present</td>
+            </tr>
+    </table>
+    <hr>
+    <p>Edward James Olmos (born February 24, 1947) is an American actor, director, producer, and activist.[2] He is best known for his roles as Lieutenant Martin "Marty" Castillo in Miami Vice (1984–1989), Actor and Director in American Me (1992), William Adama in the re-imagined Battlestar Galactica (2004–2009), teacher Jaime Escalante in Stand and Deliver (1988), and Detective Gaff in Blade Runner (1982), and its sequel Blade Runner 2049 (2017). In 2018, he played the father of two biker gang members in the FX series Mayans MC.</p>
+  </div>
+  </div>
+  
+  
+  
+  <div id="Cast8" class="bodycontent">
+  
+    <div style="display:none;" id="myDiv8" class="animate-bottom">
+    <p><img src="cast99.jpg" ></p>
+    <table style="width:100%">
+        
+        <tr>
+          <td><b>Name</b></td>
+          <td>Krista Kosonen</td>
+          
+          
+        </tr>
+        <tr>
+          <td><b>Age</b></td>
+          <td>36</td>
+        </tr>
+        <tr>
+            <td><b>Eye Color</b></td>
+            <td>Grey</td>
+          </tr>
+          <tr>
+              <td><b>Height</b></td>
+              <td>5"9 </td>
+            </tr>
+            <tr>
+                <td><b>Years Active</b></td>
+                <td>2005-Present</td>
+              </tr>
+      </table>
+      <hr>
+      <p>Krista Erika Kosonen is a Finnish actress. She is best known for her appearances in movies such as Jade Warrior, Prinsessa and Syvälle salattu. The sketch comedy television show Putous made her a household name in Finland.</p>
+    </div>
+    </div>
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="News" class="bodycontent">
+
+  <p>
+  <b> Cast</b>/Blade Runner 2049
+  <hr>
+  <!-- Images used to open the lightbox -->
+  <div class="row">
+      <div class="column" >
+        <img src="cast1.png" onclick="openBody('Cast1', this, ''); castButton()" class="hover-shadow" >
+        <p style ="font-size: 15px;"><b>Ryan Gosling</b>
+        <br> Officer K</p>
+  </div>
+
+  <div class="column">
+    <img src="cast2.png"onclick="openBody('Cast2', this, ''); castButton() " class="hover-shadow" >
+    <p style="font-size:15px"><b>Harrison Ford</b>
+    <br> Rick Deckard </p>
+  </div>
+  <div class="column">
+    <img src="cast3.png" onclick="openBody('Cast3', this, '');castButton() " class="hover-shadow">
+    <p style="font-size:15px"><b>Ana De Armas</b>
+    <br> Joi </p>
+  </div>
+  <div class="column">
+    <img src="cast4.png" onclick="openBody('Cast4', this, '');castButton() " class="hover-shadow" >
+    <p style="font-size:15px"><b>Sylvia Hoeks</b>
+    <br> Luv </p>
+  <br>
+  </div>
+
+
+  <div class="column">
+    <img src="cast5.png"onclick="openBody('Cast5', this, '');castButton() " class="hover-shadow" >
+     <p style ="font-size: 15px;"><b>David Baustista</b>
+    <br> Himself</p>
+
+  </div>
+  <div class="column">
+    <img src="cast6.jpg" onclick="openBody('Cast6', this, '');castButton() " class="hover-shadow" >
+      <p style="font-size:15px"><b>Mackenzie Davis</b>
+    <br> Mariette </p>
+  </div>
+  <div class="column">
+    <img src="cast7.jpg" onclick="openBody('Cast7', this, '');castButton() " class="hover-shadow" >
+    <p style="font-size:15px"><b>Edward James</b>
+    <br> Gaff </p>
+  </div>
+  <div class="column">
+    <img src="cast9.jpg" onclick="openBody('Cast8', this, '');castButton() " class="hover-shadow" >
+      <p style="font-size:15px"><b>Krista Kosonen</b>
+    <br> Doxie </p>
+  </div>
+
+
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+<div class="button_cont" style="padding-top:20px;" align="center"><a class="example_a" onclick="loadMore();RemoveItself(this); loadMoreButton();" target="_blank" rel="nofollow noopener">More</a></div>
+<div id="moreCast" style="display: none;">
+  <div id="loader2"></div> 
+
+  <div style="display:none;" id="loadDiv" class="animate-bottom">
+
+    <div class="column">
+      <img src="cast1.png"  onclick="openBody('Cast1', this, ''); castButton()" class="hover-shadow" >
+       <p style ="font-size: 15px;"><b>Ryan Gosling</b>
+      <br> Officer K</p>
+  
+    </div>
+    <div class="column">
+      <img src="cast2.png"  onclick="openBody('Cast2', this, ''); castButton()" class="hover-shadow" >
+        <p style="font-size:15px"><b>Harrison Ford</b>
+      <br> Rick Deckard </p>
+    </div>
+    <div class="column">
+      <img src="cast3.png" onclick="openBody('Cast3', this, ''); castButton()" class="hover-shadow" >
+      <p style="font-size:15px"><b>Ana De Armas</b>
+      <br> Joi </p>
+    </div>
+    <div class="column">
+      <img src="cast4.png"  onclick="openBody('Cast4', this, ''); castButton()" class="hover-shadow" >
+        <p style="font-size:15px"><b>Sylvia Hoeks</b>
+      <br> Luv </p>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+<script src="style.js"></script>
+</body>
+</html> 
